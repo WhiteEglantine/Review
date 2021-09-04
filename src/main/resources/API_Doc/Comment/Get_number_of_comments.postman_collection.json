@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "6fa3db59-b347-4a7d-8820-7d8d05feb929",
+		"name": "Get_number_of_comments",
+		"description": "This API gets the number of confirmed comments for a product which specified with productId parameter.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8080/api/comments/count?productId=",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/comments/count?productId=",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"comments",
+						"count"
+					],
+					"query": [
+						{
+							"key": "productId",
+							"value": ""
+						}
+					]
+				},
+				"description": "Gets the number of confirmed comments for a product."
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/comments/count?productId=",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"comments",
+								"count"
+							],
+							"query": [
+								{
+									"key": "productId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "0eae5dc5-9887-4732-829f-16ab7d08d2be",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "8de00703-5f91-4792-b0d6-b8350333b2da",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

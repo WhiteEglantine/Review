@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "d8363e8b-80c1-4c51-81e0-74732c46f3c9",
+		"name": "Update_comment_status",
+		"description": "This API updates the confirmation status for an unconfirmed comment. If the comment is already confirmed, this API will not affect the comment.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8080/api/comments/:id?confirmed=",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/comments/:id?confirmed=",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"comments",
+						":id"
+					],
+					"query": [
+						{
+							"key": "confirmed",
+							"value": ""
+						}
+					],
+					"variable": [
+						{
+							"key": "id"
+						}
+					]
+				},
+				"description": "Updates an unconrfirmed comment status ."
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/comments/:id?confirmed=",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"comments",
+								":id"
+							],
+							"query": [
+								{
+									"key": "confirmed",
+									"value": ""
+								}
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	]
+}

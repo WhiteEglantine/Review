@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "b2a52335-03eb-45f0-a4a0-c41e52cb0c2c",
+		"name": "Add_vote",
+		"description": "This API adds a new vote for a product. The request body should contain a json object with these attributes: userId(long), productId(long), value(int). All the attributes are mandatory.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8080/api/votes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/votes?productId=",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"votes"
+					],
+					"query": [
+						{
+							"key": "productId",
+							"value": ""
+						}
+					]
+				},
+				"description": "Adds a new vote for a product."
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/votes?productId=",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"votes"
+							],
+							"query": [
+								{
+									"key": "productId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	]
+}

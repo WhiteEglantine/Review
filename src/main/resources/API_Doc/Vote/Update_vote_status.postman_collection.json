@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "38c0bdcd-d1c5-4c52-a63d-fc35f7b30c25",
+		"name": "Update_vote_status",
+		"description": "This API updates the confirmation status for an unconfirmed vote. If the vote is already confirmed, this API will not affect the vote.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8080/api/votes/:id?confirmed=",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/votes/:id?confirmed=",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"votes",
+						":id"
+					],
+					"query": [
+						{
+							"key": "confirmed",
+							"value": ""
+						}
+					],
+					"variable": [
+						{
+							"key": "id"
+						}
+					]
+				},
+				"description": "Updates an unconrfirmed vote status."
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/votes/:id?confirmed=",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"votes",
+								":id"
+							],
+							"query": [
+								{
+									"key": "confirmed",
+									"value": ""
+								}
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	]
+}

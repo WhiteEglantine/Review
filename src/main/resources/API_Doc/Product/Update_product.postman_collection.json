@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "265a182e-95c1-44f6-bac7-a8769b6a5f75",
+		"name": "Update_product",
+		"description": "This API updates a product by its id. The request body should contain a product object with these attributes: show(boolean), showComments(boolean), showVotes(boolean), saveComment(boolean), saveVote(boolean). All the attributes are optional. The existing product will be replaced by the specified product. ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8080/api/products/:id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "A product object"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/products/:id",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id"
+						}
+					]
+				},
+				"description": "Updates a product by id."
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "A product object"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/products/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	]
+}

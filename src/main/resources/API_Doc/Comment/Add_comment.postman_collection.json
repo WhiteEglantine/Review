@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "c6795b7d-c488-40e4-9487-1267315963b0",
+		"name": "Add_comment",
+		"description": "This API adds a new comments for a product. The request body should contain a json object with these attributes: userId(long), productId(long), value(string). All the attributes are mandatory.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8080/api/comments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "An info object"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/comments",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"comments"
+					]
+				},
+				"description": "Adds a new comment for a product."
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "An info object"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/comments",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"comments"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	]
+}
